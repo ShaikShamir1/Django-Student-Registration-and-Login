@@ -1,0 +1,32 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background: linear-gradient(to bottom right,blueviolet, blue);
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+    gap: 0.7rem;
+    color: white;
+}
+.wrap{
+    background: linear-gradient(to bottom right,blue,white);
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 90%;
+    width: 90%;
+    gap: 0.3rem;
+    border-radius: 10px;
+}
+.wrap img{
+    border: 4px solid white;
+}

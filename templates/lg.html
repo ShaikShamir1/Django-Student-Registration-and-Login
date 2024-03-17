@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+{%load static%}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Log In</title>
+    <link rel="stylesheet" href="{% static 'lg.css' %}">
+</head>
+<body>
+    <div class="wrap">
+        <h1>Student Portal</h1>
+        <form method="post">
+            {% csrf_token %}
+            {{var}}
+            <input type="submit" value="Submit" id="sub">
+            <a href="#">forgot password?</a>
+            <a href="{% url 'reg' %}">Registration</a>
+        </form>
+    </div>
+</body>
+</html>

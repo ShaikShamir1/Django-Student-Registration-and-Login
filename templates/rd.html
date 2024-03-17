@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student's Data</title>
+    <link rel="stylesheet" href="{% static 'read.css' %}">
+</head>
+<body>
+    <h1>Student's Data</h1>
+    <div class="wrap">
+        {% for i in var %}
+            <img src="{{i.Profile_photo.url}}" alt="student photo" height="250px" width="250px" style="border-radius: 50%; object-fit: cover;">
+            <h3>Username: {{i.username}}</h3>
+            <h3>Number: {{i.num}}</h3>
+        {% endfor %}
+    </div>
+</body>
+</html>

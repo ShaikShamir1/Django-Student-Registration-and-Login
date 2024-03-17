@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HOME</title>
+    <link rel="stylesheet" href="{% static 'home.css' %}">
+</head>
+<body>
+    <div class="wrap">
+        <img src="{{var2.Profile_photo.url}}" alt="student photo" height="300px" width="300px" style="object-fit: cover;border-radius: 50%;">
+        <h1>Username: {{var}}</h1>
+        <h3>Password: {{var1}}</h3>
+        <h3>Number: {{var2.num}}</h3>
+    </div>
+    <a href="{% url 'log' %}">Logout</a>
+</body>
+</html>
